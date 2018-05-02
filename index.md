@@ -1,37 +1,92 @@
-## Welcome to GitHub Pages
+## 基本压缩命令
 
-You can use the [editor on GitHub](https://github.com/wsj123/linux-ys/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.zip   .rar .bz2 
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+基本压缩命令
+zip 压缩文件名  源文件
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+zip -r 压缩文件名  源目录
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+ls
+
+zip longzls.zip longzls
+
+
+linux不区分扩展名
+
+
+压缩格式做换算
+
+
+mkdir jp
+
+ls
+
+
+touch jp/cangls 
+
+touch jp/longls
+
+touch jp/boduols
+
+zip -r jp.zip jp
+
+unzip 解压缩
+
+rm -rf jp
+
+ls
+unzip longls.zip
+
+
+gzip 源文件  .gz
+
+gzip -c 源文件 > 压缩文件
+
+gzip -r 目录
+
+rm -rf "*.zip"
+
+
+gzip longzls
+
+ls > abc
+
+cat abc
+
+
+gzip -c abc 
+
+gzip -c abc > abc.gz 源文件不消失
+
+
+gzip jp
+
+
+gzip -r jp 压缩子目录
+
+
+gzip -d 压缩文件 解压缩
+
+gunzip  longzls.zip
+
+gunzip -r jp
+
+
+bzip2 源文件
+
+
+bzip2 -k 源文件，不能压缩目录
+
+
+bzip2 abc
+
+bzip2 -k longzls 压缩文件保存源目录
+
+
+bzip2  -d abc.bz2
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wsj123/linux-ys/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
